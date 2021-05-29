@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    7Team Smart-Teg Server
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+
+    <script>
+        // Import Admin SDK
+        var admin = require("firebase-admin");
+
+        // Get a database reference to our blog
+        var db = admin.database();
+        var ref = db.ref("server/saving-data/fireblog");
+
+        var serviceAccount = require("C:\Users\dbfl2\Downloads\lost-smart-teg-firebase-adminsdk-c831y-04b792d9e0.json");
+
+        admin.initializeApp({
+            credential: admin.credential.cert(serviceAccount),
+            databaseURL: "https://lost-smart-teg-default-rtdb.firebaseio.com"
+        });
+
+
+        var refreshToken; // Get refresh token from OAuth2 flow
+
+        admin.initializeApp({
+            credential: admin.credential.refreshToken(refreshToken),
+            databaseURL: 'https://lost-smart-teg-default-rtdb.firebaseio.com/'
+        });
+
+        // Initialize the default app
+        var admin = require('firebase-admin');
+        var app = admin.initializeApp();
+    </script>
+
+    <script>
+        // Set the configuration for your app
+        // TODO: Replace with your project's config object
+        var config = {
+            apiKey: "AIzaSyBEvDOks4bxG5eBoNHVttkhG4PewsrMVBs",
+            authDomain: "lost-smart-teg.firebaseapp.com",
+            databaseURL: "https://lost-smart-teg-default-rtdb.firebaseio.com/",
+            storageBucket: "lost-smart-teg.appspot.com"
+        };
+        firebase.initializeApp(config);
+
+        // Get a reference to the database service
+        var database = firebase.database();
+    </script>
+
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.3/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</html>
