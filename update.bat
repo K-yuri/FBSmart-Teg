@@ -1,3 +1,3 @@
 git add --all
-git commit -m "web server link vue.js"
+git commit -m "new bapo test"
 git push -u origin master
